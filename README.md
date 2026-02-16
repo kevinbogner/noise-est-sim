@@ -22,7 +22,7 @@ uv sync
 uv run noise_est.py
 ```
 
-By default, outputs are written to this directory. To choose another output folder:
+By default, outputs are written to `./artifacts`. To choose another output folder:
 
 ```bash
 uv run noise_est.py --out /path/to/output
@@ -42,14 +42,14 @@ uv run noise_est.py --figures commander-detection
 
 ## Generated Plot Artifacts
 
-- Policy plane: [`noise_est_policy_plane.pdf`](./noise_est_policy_plane.pdf)
-  ![Policy plane](./noise_est_policy_plane.png)
-- Lieutenant loss-bias detection: [`noise_est_loss_bias_detection.pdf`](./noise_est_loss_bias_detection.pdf)
-  ![Lieutenant loss-bias detection](./noise_est_loss_bias_detection.png)
-- Commander detection: [`noise_est_commander_detection.pdf`](./noise_est_commander_detection.pdf)
-  ![Commander detection](./noise_est_commander_detection.png)
+- Policy plane: [`artifacts/noise_est_policy_plane.pdf`](./artifacts/noise_est_policy_plane.pdf)
+  ![Policy plane](./artifacts/noise_est_policy_plane.png)
+- Lieutenant loss-bias detection: [`artifacts/noise_est_loss_bias_detection.pdf`](./artifacts/noise_est_loss_bias_detection.pdf)
+  ![Lieutenant loss-bias detection](./artifacts/noise_est_loss_bias_detection.png)
+- Commander detection: [`artifacts/noise_est_commander_detection.pdf`](./artifacts/noise_est_commander_detection.pdf)
+  ![Commander detection](./artifacts/noise_est_commander_detection.png)
 
 Related sweep data files:
 
-- [`noise_est_loss_bias_sweep.json`](./noise_est_loss_bias_sweep.json)
-- [`noise_est_commander_sweep.json`](./noise_est_commander_sweep.json)
+- [`artifacts/noise_est_loss_bias_sweep.json`](./artifacts/noise_est_loss_bias_sweep.json)
+- [`artifacts/noise_est_commander_sweep.json`](./artifacts/noise_est_commander_sweep.json)

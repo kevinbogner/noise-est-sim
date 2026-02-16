@@ -3729,7 +3729,12 @@ def main() -> None:
     gate_cmd_vals = _as_list_of_floats(cfg_data.get("gate_ns_cmd", 0.0), 2, 0.0)
 
     flag_rule = _parse_flag_rule(str(cfg_data.get("flag_rule", "lower")))
-    out_dir_cfg = str(cfg_data.get("out_dir", os.path.dirname(__file__) or "."))
+    out_dir_cfg = str(
+        cfg_data.get(
+            "out_dir",
+            os.path.join(os.path.dirname(__file__) or ".", "artifacts"),
+        )
+    )
     out_dir = args.out or out_dir_cfg
     windows = int(cfg_data.get("windows", 1))
     quarantine_w = int(cfg_data.get("quarantine_w", 1))
